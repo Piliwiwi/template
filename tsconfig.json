@@ -17,6 +17,7 @@
     ],
     "paths": {
       "@core/*": ["src/app/Core/core/*"],
+      "@providers/*": ["src/app/Core/core/providers/*"],
       "@models/*": ["src/app/Core/models/*"],
       "@visitor/*": ["src/app/Visitor/visitor"]
     }
