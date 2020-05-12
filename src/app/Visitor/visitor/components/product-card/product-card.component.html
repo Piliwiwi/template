@@ -1,0 +1,19 @@
+<div class="card" style="max-width: 250px;">
+  <img class="card-img-top" src="{{product.coverImageUrl}}">
+  
+  <div class="card-body text-center p-1">
+    <h4 class="card-title">{{product.name | titlecase}}</h4>
+    <p class="card-text">{{product.price | currency: 'CLP'}}</p>
+  </div>
+
+  <div class="card-footer text-center">
+    <span class="badge badge-pill"
+      [ngClass]="{
+        'badge-primary': product.stock != 0,
+        'badge-danger': product.stock == 0 
+      }"
+    >
+      Cantidad {{product.stock}}
+    </span>
+  </div>
+</div>
